@@ -9,6 +9,14 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-ExtraBold.ttf">
+            <string>Poppins-ExtraBold</string>
+        </array>
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="U2G-fh-N8c">
@@ -19,13 +27,62 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aK2-Me-JTw">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="768"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t4E-K4-gX0">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7g-bf-HEY" userLabel="titleLabel">
+                                                <rect key="frame" x="32" y="11" width="295" height="88"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">Nice to see you,
+Kunwar.</string>
+                                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="30"/>
+                                                <color key="textColor" red="0.29803921568627451" green="0.29411764705882354" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What are you looking for?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8W-jr-dvF" userLabel="titleLabel">
+                                                <rect key="frame" x="32" y="99" width="220" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Poppins-ExtraBold" family="Poppins" pointSize="16"/>
+                                                <color key="textColor" red="0.95686274509803915" green="0.72941176470588232" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="thirdStreet" translatesAutoresizingMaskIntoConstraints="NO" id="gmB-tA-4zz">
+                                                <rect key="frame" x="32" y="157" width="311" height="218"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="starbucks" translatesAutoresizingMaskIntoConstraints="NO" id="oXz-gZ-GOo">
+                                                <rect key="frame" x="32" y="396" width="311" height="218"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="urbanMarket" translatesAutoresizingMaskIntoConstraints="NO" id="1nG-7i-98s">
+                                                <rect key="frame" x="32" y="635" width="311" height="218"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Icon-Settings" translatesAutoresizingMaskIntoConstraints="NO" id="JKS-UJ-P6c">
+                                                <rect key="frame" x="316" y="21" width="27" height="28"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stewart" translatesAutoresizingMaskIntoConstraints="NO" id="Ty0-Wj-mSs">
+                                                <rect key="frame" x="32" y="874" width="311" height="218"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="earHart" translatesAutoresizingMaskIntoConstraints="NO" id="Quh-Ig-YF1">
+                                                <rect key="frame" x="32" y="1113" width="311" height="218"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wSp-j2-dr7">
+                                                <rect key="frame" x="316" y="21" width="27" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <segue destination="NgE-WJ-b86" kind="show" id="kuv-jh-UAB"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="1000" id="UYp-GH-ATp"/>
+                                            <constraint firstAttribute="height" constant="2000" id="UYp-GH-ATp"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -40,7 +97,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="aK2-Me-JTw" firstAttribute="top" secondItem="Bwz-3d-FmG" secondAttribute="top" id="6ug-6c-rWP"/>
+                            <constraint firstItem="aK2-Me-JTw" firstAttribute="top" secondItem="Bwz-3d-FmG" secondAttribute="top" constant="44" id="6ug-6c-rWP"/>
                             <constraint firstItem="aK2-Me-JTw" firstAttribute="trailing" secondItem="68Z-Pw-FMl" secondAttribute="trailing" id="MdY-g6-Bj5"/>
                             <constraint firstAttribute="bottom" secondItem="aK2-Me-JTw" secondAttribute="bottom" id="k1Q-Yz-Eny"/>
                             <constraint firstItem="aK2-Me-JTw" firstAttribute="leading" secondItem="68Z-Pw-FMl" secondAttribute="leading" id="n7o-cV-HMd"/>
@@ -52,5 +109,37 @@
             </objects>
             <point key="canvasLocation" x="1228" y="77.58620689655173"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="X0e-yD-fHm">
+            <objects>
+                <viewController id="NgE-WJ-b86" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DNz-ja-Vg3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8G-oG-WG6" userLabel="titleLabel">
+                                <rect key="frame" x="32" y="65" width="295" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="30"/>
+                                <color key="textColor" red="0.29803921570000003" green="0.29411764709999999" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="vQP-Uq-O78"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8QR-bG-dUH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2351" y="78"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="Icon-Settings" width="240" height="240"/>
+        <image name="earHart" width="1866" height="1308"/>
+        <image name="starbucks" width="1866" height="1308"/>
+        <image name="stewart" width="1866" height="1308"/>
+        <image name="thirdStreet" width="1866" height="1308"/>
+        <image name="urbanMarket" width="1866" height="1308"/>
+    </resources>
 </document>

@@ -7,6 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		978BA01F232D6C0700A2FE9F /* Poppins-RegularItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 978BA00D232D6C0600A2FE9F /* Poppins-RegularItalic.ttf */; };
+		978BA020232D6C0700A2FE9F /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 978BA00E232D6C0600A2FE9F /* Poppins-ThinItalic.ttf */; };
+		978BA021232D6C0700A2FE9F /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 978BA00F232D6C0600A2FE9F /* Poppins-Black.ttf */; };
+		978BA022232D6C0700A2FE9F /* Poppins-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 978BA010232D6C0600A2FE9F /* Poppins-ExtraBoldItalic.ttf */; };
+		978BA023232D6C0700A2FE9F /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 978BA011232D6C0600A2FE9F /* Poppins-MediumItalic.ttf */; };
+		978BA024232D6C0700A2FE9F /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 978BA012232D6C0600A2FE9F /* Poppins-Bold.ttf */; };
+		978BA025232D6C0700A2FE9F /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 978BA013232D6C0600A2FE9F /* Poppins-Regular.ttf */; };
+		978BA026232D6C0700A2FE9F /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 978BA014232D6C0600A2FE9F /* Poppins-Medium.ttf */; };
+		978BA027232D6C0700A2FE9F /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 978BA015232D6C0600A2FE9F /* Poppins-Thin.ttf */; };
+		978BA028232D6C0700A2FE9F /* Poppins-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 978BA016232D6C0600A2FE9F /* Poppins-SemiBoldItalic.ttf */; };
+		978BA029232D6C0700A2FE9F /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 978BA017232D6C0600A2FE9F /* Poppins-ExtraLight.ttf */; };
+		978BA02A232D6C0700A2FE9F /* Poppins-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 978BA018232D6C0700A2FE9F /* Poppins-BlackItalic.ttf */; };
+		978BA02B232D6C0700A2FE9F /* Poppins-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 978BA019232D6C0700A2FE9F /* Poppins-BoldItalic.ttf */; };
+		978BA02C232D6C0700A2FE9F /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 978BA01A232D6C0700A2FE9F /* Poppins-Light.ttf */; };
+		978BA02D232D6C0700A2FE9F /* Poppins-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 978BA01B232D6C0700A2FE9F /* Poppins-LightItalic.ttf */; };
+		978BA02E232D6C0700A2FE9F /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 978BA01C232D6C0700A2FE9F /* Poppins-SemiBold.ttf */; };
+		978BA02F232D6C0700A2FE9F /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 978BA01D232D6C0700A2FE9F /* Poppins-ExtraLightItalic.ttf */; };
+		978BA030232D6C0700A2FE9F /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 978BA01E232D6C0700A2FE9F /* Poppins-ExtraBold.ttf */; };
+		978BA043232D6C1500A2FE9F /* Inter-ExtraLight-BETA.otf in Resources */ = {isa = PBXBuildFile; fileRef = 978BA031232D6C1300A2FE9F /* Inter-ExtraLight-BETA.otf */; };
+		978BA044232D6C1500A2FE9F /* Inter-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 978BA032232D6C1300A2FE9F /* Inter-Italic.otf */; };
+		978BA045232D6C1500A2FE9F /* Inter-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 978BA033232D6C1300A2FE9F /* Inter-Bold.otf */; };
+		978BA046232D6C1500A2FE9F /* Inter-Light-BETA.otf in Resources */ = {isa = PBXBuildFile; fileRef = 978BA034232D6C1400A2FE9F /* Inter-Light-BETA.otf */; };
+		978BA047232D6C1500A2FE9F /* Inter-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 978BA035232D6C1400A2FE9F /* Inter-Black.otf */; };
+		978BA048232D6C1500A2FE9F /* Inter-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 978BA036232D6C1400A2FE9F /* Inter-MediumItalic.otf */; };
+		978BA049232D6C1500A2FE9F /* Inter-ExtraLightItalic-BETA.otf in Resources */ = {isa = PBXBuildFile; fileRef = 978BA037232D6C1400A2FE9F /* Inter-ExtraLightItalic-BETA.otf */; };
+		978BA04A232D6C1500A2FE9F /* Inter-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 978BA038232D6C1400A2FE9F /* Inter-Regular.otf */; };
+		978BA04B232D6C1500A2FE9F /* Inter-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 978BA039232D6C1400A2FE9F /* Inter-BoldItalic.otf */; };
+		978BA04C232D6C1500A2FE9F /* Inter-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 978BA03A232D6C1400A2FE9F /* Inter-BlackItalic.otf */; };
+		978BA04D232D6C1500A2FE9F /* Inter-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 978BA03B232D6C1400A2FE9F /* Inter-ExtraBold.otf */; };
+		978BA04E232D6C1500A2FE9F /* Inter-SemiBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 978BA03C232D6C1400A2FE9F /* Inter-SemiBoldItalic.otf */; };
+		978BA04F232D6C1500A2FE9F /* Inter-Thin-BETA.otf in Resources */ = {isa = PBXBuildFile; fileRef = 978BA03D232D6C1400A2FE9F /* Inter-Thin-BETA.otf */; };
+		978BA050232D6C1500A2FE9F /* Inter-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 978BA03E232D6C1400A2FE9F /* Inter-SemiBold.otf */; };
+		978BA051232D6C1500A2FE9F /* Inter-LightItalic-BETA.otf in Resources */ = {isa = PBXBuildFile; fileRef = 978BA03F232D6C1400A2FE9F /* Inter-LightItalic-BETA.otf */; };
+		978BA052232D6C1500A2FE9F /* Inter-ExtraBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 978BA040232D6C1500A2FE9F /* Inter-ExtraBoldItalic.otf */; };
+		978BA053232D6C1500A2FE9F /* Inter-ThinItalic-BETA.otf in Resources */ = {isa = PBXBuildFile; fileRef = 978BA041232D6C1500A2FE9F /* Inter-ThinItalic-BETA.otf */; };
+		978BA054232D6C1500A2FE9F /* Inter-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 978BA042232D6C1500A2FE9F /* Inter-Medium.otf */; };
 		97FD3A6A232D45E500E6683B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FD3A69232D45E500E6683B /* AppDelegate.swift */; };
 		97FD3A6C232D45E500E6683B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FD3A6B232D45E500E6683B /* ViewController.swift */; };
 		97FD3A6F232D45E500E6683B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97FD3A6D232D45E500E6683B /* Main.storyboard */; };
@@ -34,6 +70,42 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		978BA00D232D6C0600A2FE9F /* Poppins-RegularItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-RegularItalic.ttf"; sourceTree = "<group>"; };
+		978BA00E232D6C0600A2FE9F /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
+		978BA00F232D6C0600A2FE9F /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
+		978BA010232D6C0600A2FE9F /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		978BA011232D6C0600A2FE9F /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
+		978BA012232D6C0600A2FE9F /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		978BA013232D6C0600A2FE9F /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		978BA014232D6C0600A2FE9F /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		978BA015232D6C0600A2FE9F /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
+		978BA016232D6C0600A2FE9F /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		978BA017232D6C0600A2FE9F /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
+		978BA018232D6C0700A2FE9F /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BlackItalic.ttf"; sourceTree = "<group>"; };
+		978BA019232D6C0700A2FE9F /* Poppins-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BoldItalic.ttf"; sourceTree = "<group>"; };
+		978BA01A232D6C0700A2FE9F /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		978BA01B232D6C0700A2FE9F /* Poppins-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-LightItalic.ttf"; sourceTree = "<group>"; };
+		978BA01C232D6C0700A2FE9F /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		978BA01D232D6C0700A2FE9F /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		978BA01E232D6C0700A2FE9F /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
+		978BA031232D6C1300A2FE9F /* Inter-ExtraLight-BETA.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraLight-BETA.otf"; sourceTree = "<group>"; };
+		978BA032232D6C1300A2FE9F /* Inter-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Italic.otf"; sourceTree = "<group>"; };
+		978BA033232D6C1300A2FE9F /* Inter-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.otf"; sourceTree = "<group>"; };
+		978BA034232D6C1400A2FE9F /* Inter-Light-BETA.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light-BETA.otf"; sourceTree = "<group>"; };
+		978BA035232D6C1400A2FE9F /* Inter-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Black.otf"; sourceTree = "<group>"; };
+		978BA036232D6C1400A2FE9F /* Inter-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-MediumItalic.otf"; sourceTree = "<group>"; };
+		978BA037232D6C1400A2FE9F /* Inter-ExtraLightItalic-BETA.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraLightItalic-BETA.otf"; sourceTree = "<group>"; };
+		978BA038232D6C1400A2FE9F /* Inter-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.otf"; sourceTree = "<group>"; };
+		978BA039232D6C1400A2FE9F /* Inter-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-BoldItalic.otf"; sourceTree = "<group>"; };
+		978BA03A232D6C1400A2FE9F /* Inter-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-BlackItalic.otf"; sourceTree = "<group>"; };
+		978BA03B232D6C1400A2FE9F /* Inter-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraBold.otf"; sourceTree = "<group>"; };
+		978BA03C232D6C1400A2FE9F /* Inter-SemiBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBoldItalic.otf"; sourceTree = "<group>"; };
+		978BA03D232D6C1400A2FE9F /* Inter-Thin-BETA.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Thin-BETA.otf"; sourceTree = "<group>"; };
+		978BA03E232D6C1400A2FE9F /* Inter-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.otf"; sourceTree = "<group>"; };
+		978BA03F232D6C1400A2FE9F /* Inter-LightItalic-BETA.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-LightItalic-BETA.otf"; sourceTree = "<group>"; };
+		978BA040232D6C1500A2FE9F /* Inter-ExtraBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraBoldItalic.otf"; sourceTree = "<group>"; };
+		978BA041232D6C1500A2FE9F /* Inter-ThinItalic-BETA.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ThinItalic-BETA.otf"; sourceTree = "<group>"; };
+		978BA042232D6C1500A2FE9F /* Inter-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.otf"; sourceTree = "<group>"; };
 		97FD3A66232D45E500E6683B /* Boiler Bag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Boiler Bag.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		97FD3A69232D45E500E6683B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97FD3A6B232D45E500E6683B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +146,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		978B9FE8232D6AB500A2FE9F /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				978BA035232D6C1400A2FE9F /* Inter-Black.otf */,
+				978BA03A232D6C1400A2FE9F /* Inter-BlackItalic.otf */,
+				978BA033232D6C1300A2FE9F /* Inter-Bold.otf */,
+				978BA039232D6C1400A2FE9F /* Inter-BoldItalic.otf */,
+				978BA03B232D6C1400A2FE9F /* Inter-ExtraBold.otf */,
+				978BA040232D6C1500A2FE9F /* Inter-ExtraBoldItalic.otf */,
+				978BA031232D6C1300A2FE9F /* Inter-ExtraLight-BETA.otf */,
+				978BA037232D6C1400A2FE9F /* Inter-ExtraLightItalic-BETA.otf */,
+				978BA032232D6C1300A2FE9F /* Inter-Italic.otf */,
+				978BA034232D6C1400A2FE9F /* Inter-Light-BETA.otf */,
+				978BA03F232D6C1400A2FE9F /* Inter-LightItalic-BETA.otf */,
+				978BA042232D6C1500A2FE9F /* Inter-Medium.otf */,
+				978BA036232D6C1400A2FE9F /* Inter-MediumItalic.otf */,
+				978BA038232D6C1400A2FE9F /* Inter-Regular.otf */,
+				978BA03E232D6C1400A2FE9F /* Inter-SemiBold.otf */,
+				978BA03C232D6C1400A2FE9F /* Inter-SemiBoldItalic.otf */,
+				978BA03D232D6C1400A2FE9F /* Inter-Thin-BETA.otf */,
+				978BA041232D6C1500A2FE9F /* Inter-ThinItalic-BETA.otf */,
+				978BA00F232D6C0600A2FE9F /* Poppins-Black.ttf */,
+				978BA018232D6C0700A2FE9F /* Poppins-BlackItalic.ttf */,
+				978BA012232D6C0600A2FE9F /* Poppins-Bold.ttf */,
+				978BA019232D6C0700A2FE9F /* Poppins-BoldItalic.ttf */,
+				978BA01E232D6C0700A2FE9F /* Poppins-ExtraBold.ttf */,
+				978BA010232D6C0600A2FE9F /* Poppins-ExtraBoldItalic.ttf */,
+				978BA017232D6C0600A2FE9F /* Poppins-ExtraLight.ttf */,
+				978BA01D232D6C0700A2FE9F /* Poppins-ExtraLightItalic.ttf */,
+				978BA01A232D6C0700A2FE9F /* Poppins-Light.ttf */,
+				978BA01B232D6C0700A2FE9F /* Poppins-LightItalic.ttf */,
+				978BA014232D6C0600A2FE9F /* Poppins-Medium.ttf */,
+				978BA011232D6C0600A2FE9F /* Poppins-MediumItalic.ttf */,
+				978BA013232D6C0600A2FE9F /* Poppins-Regular.ttf */,
+				978BA00D232D6C0600A2FE9F /* Poppins-RegularItalic.ttf */,
+				978BA01C232D6C0700A2FE9F /* Poppins-SemiBold.ttf */,
+				978BA016232D6C0600A2FE9F /* Poppins-SemiBoldItalic.ttf */,
+				978BA015232D6C0600A2FE9F /* Poppins-Thin.ttf */,
+				978BA00E232D6C0600A2FE9F /* Poppins-ThinItalic.ttf */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		97FD3A5D232D45E500E6683B = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +212,7 @@
 		97FD3A68232D45E500E6683B /* Boiler Bag */ = {
 			isa = PBXGroup;
 			children = (
+				978B9FE8232D6AB500A2FE9F /* New Group */,
 				97FD3A69232D45E500E6683B /* AppDelegate.swift */,
 				97FD3A6B232D45E500E6683B /* ViewController.swift */,
 				97FD3A6D232D45E500E6683B /* Main.storyboard */,
@@ -229,9 +345,45 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				978BA021232D6C0700A2FE9F /* Poppins-Black.ttf in Resources */,
+				978BA02C232D6C0700A2FE9F /* Poppins-Light.ttf in Resources */,
+				978BA024232D6C0700A2FE9F /* Poppins-Bold.ttf in Resources */,
+				978BA026232D6C0700A2FE9F /* Poppins-Medium.ttf in Resources */,
+				978BA047232D6C1500A2FE9F /* Inter-Black.otf in Resources */,
+				978BA04F232D6C1500A2FE9F /* Inter-Thin-BETA.otf in Resources */,
+				978BA028232D6C0700A2FE9F /* Poppins-SemiBoldItalic.ttf in Resources */,
+				978BA045232D6C1500A2FE9F /* Inter-Bold.otf in Resources */,
+				978BA050232D6C1500A2FE9F /* Inter-SemiBold.otf in Resources */,
+				978BA02E232D6C0700A2FE9F /* Poppins-SemiBold.ttf in Resources */,
+				978BA023232D6C0700A2FE9F /* Poppins-MediumItalic.ttf in Resources */,
+				978BA051232D6C1500A2FE9F /* Inter-LightItalic-BETA.otf in Resources */,
 				97FD3A74232D45E600E6683B /* LaunchScreen.storyboard in Resources */,
+				978BA02D232D6C0700A2FE9F /* Poppins-LightItalic.ttf in Resources */,
+				978BA029232D6C0700A2FE9F /* Poppins-ExtraLight.ttf in Resources */,
+				978BA049232D6C1500A2FE9F /* Inter-ExtraLightItalic-BETA.otf in Resources */,
+				978BA030232D6C0700A2FE9F /* Poppins-ExtraBold.ttf in Resources */,
+				978BA044232D6C1500A2FE9F /* Inter-Italic.otf in Resources */,
+				978BA02A232D6C0700A2FE9F /* Poppins-BlackItalic.ttf in Resources */,
 				97FD3A71232D45E600E6683B /* Assets.xcassets in Resources */,
+				978BA048232D6C1500A2FE9F /* Inter-MediumItalic.otf in Resources */,
+				978BA02F232D6C0700A2FE9F /* Poppins-ExtraLightItalic.ttf in Resources */,
+				978BA04B232D6C1500A2FE9F /* Inter-BoldItalic.otf in Resources */,
+				978BA043232D6C1500A2FE9F /* Inter-ExtraLight-BETA.otf in Resources */,
+				978BA04A232D6C1500A2FE9F /* Inter-Regular.otf in Resources */,
+				978BA054232D6C1500A2FE9F /* Inter-Medium.otf in Resources */,
+				978BA022232D6C0700A2FE9F /* Poppins-ExtraBoldItalic.ttf in Resources */,
+				978BA020232D6C0700A2FE9F /* Poppins-ThinItalic.ttf in Resources */,
+				978BA046232D6C1500A2FE9F /* Inter-Light-BETA.otf in Resources */,
 				97FD3A6F232D45E500E6683B /* Main.storyboard in Resources */,
+				978BA027232D6C0700A2FE9F /* Poppins-Thin.ttf in Resources */,
+				978BA052232D6C1500A2FE9F /* Inter-ExtraBoldItalic.otf in Resources */,
+				978BA053232D6C1500A2FE9F /* Inter-ThinItalic-BETA.otf in Resources */,
+				978BA01F232D6C0700A2FE9F /* Poppins-RegularItalic.ttf in Resources */,
+				978BA025232D6C0700A2FE9F /* Poppins-Regular.ttf in Resources */,
+				978BA04E232D6C1500A2FE9F /* Inter-SemiBoldItalic.otf in Resources */,
+				978BA04C232D6C1500A2FE9F /* Inter-BlackItalic.otf in Resources */,
+				978BA04D232D6C1500A2FE9F /* Inter-ExtraBold.otf in Resources */,
+				978BA02B232D6C0700A2FE9F /* Poppins-BoldItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
