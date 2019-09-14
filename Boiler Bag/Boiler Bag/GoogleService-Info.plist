@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>109693676403-d6pd8hha5b9cqmg3al17cdouoflqjtod.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.109693676403-d6pd8hha5b9cqmg3al17cdouoflqjtod</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBi-Y59gt1ECO_agx5B4a_mEJwfmK4xEDo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>109693676403</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>hello-world.Boiler-Bag</string>
+	<key>PROJECT_ID</key>
+	<string>boiler-bag-a4a56</string>
+	<key>STORAGE_BUCKET</key>
+	<string>boiler-bag-a4a56.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:109693676403:ios:5b20812560781abca17306</string>
+	<key>DATABASE_URL</key>
+	<string>https://boiler-bag-a4a56.firebaseio.com</string>
+</dict>
+</plist>
