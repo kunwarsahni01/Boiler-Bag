@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zSb-Fj-Ibe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DsY-8s-ABf">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -13,11 +13,216 @@
         <array key="Poppins-ExtraBold.ttf">
             <string>Poppins-ExtraBold</string>
         </array>
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
         <array key="Poppins-SemiBold.ttf">
             <string>Poppins-SemiBold</string>
         </array>
     </customFonts>
     <scenes>
+        <!--Log In View Controller-->
+        <scene sceneID="g8g-hw-bQk">
+            <objects>
+                <viewController id="Dvx-64-riw" customClass="logInViewController" customModule="Boiler_Bag" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="93m-sn-5Vy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logInFInal" translatesAutoresizingMaskIntoConstraints="NO" id="TEw-oV-SQP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NCB-hr-uQ3">
+                                <rect key="frame" x="32" y="176" width="267" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="kpn-Od-JiT" kind="show" id="fpi-V8-kDd"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="jdoe@gmail.com" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rss-FN-D8k">
+                                <rect key="frame" x="28" y="356" width="309" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="**********" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ghT-O1-nO6">
+                                <rect key="frame" x="28" y="442" width="309" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nxq-90-7YU">
+                                <rect key="frame" x="32" y="534" width="305" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="logInTouched:" destination="Dvx-64-riw" eventType="touchUpInside" id="dSp-uF-2wr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="46w-YY-mYn">
+                                <rect key="frame" x="32" y="639" width="305" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="googleLogInTouch:" destination="Dvx-64-riw" eventType="touchUpInside" id="Rp6-c2-TVn"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="white" translatesAutoresizingMaskIntoConstraints="NO" id="3YQ-LM-JUc">
+                                <rect key="frame" x="32" y="596" width="305" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="DvB-pM-COR"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailLogIn" destination="rss-FN-D8k" id="ioq-f2-vwC"/>
+                        <outlet property="googleLogInButton" destination="46w-YY-mYn" id="lK5-FH-30i"/>
+                        <outlet property="logInButton" destination="Nxq-90-7YU" id="5i6-HD-nfi"/>
+                        <outlet property="passwordLogIn" destination="ghT-O1-nO6" id="zZc-rw-Yyu"/>
+                        <segue destination="DsY-8s-ABf" kind="show" identifier="loginToRoot" id="KMU-An-4ak"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jlt-yq-Km0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3136.8000000000002" y="-627.33990147783254"/>
+        </scene>
+        <!--Sign Up View Controller-->
+        <scene sceneID="BmQ-Pv-ryk">
+            <objects>
+                <viewController id="kpn-Od-JiT" customClass="signUpViewController" customModule="Boiler_Bag" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sCC-p5-ib1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="signup1" translatesAutoresizingMaskIntoConstraints="NO" id="Ufk-AZ-7Bs">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="jdoe@gmail.com" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4hD-ex-Yeb">
+                                <rect key="frame" x="29" y="355" width="313" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zFy-QA-6VA">
+                                <rect key="frame" x="34" y="165" width="286" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="Dvx-64-riw" kind="show" id="LhG-QU-x4Q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="46f-EP-M8k">
+                                <rect key="frame" x="29" y="534" width="313" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="signUpTouched:" destination="kpn-Od-JiT" eventType="touchUpInside" id="gI7-G4-4Re"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rym-TO-h2n">
+                                <rect key="frame" x="34" y="644" width="308" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="googleButtTapped:" destination="kpn-Od-JiT" eventType="touchUpInside" id="HPS-Nr-2iL"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="**********" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5bh-ch-bVi">
+                                <rect key="frame" x="29" y="445" width="313" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="white" translatesAutoresizingMaskIntoConstraints="NO" id="xXQ-Kq-XS6">
+                                <rect key="frame" x="29" y="609" width="313" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="PjN-6F-qcA">
+                                <rect key="frame" x="29" y="272" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.93026918172836304" green="0.73574560880661011" blue="0.25081217288970947" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sign up as a delivery user." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lhU-M3-2LN">
+                                <rect key="frame" x="92" y="268" width="228" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Poppins-ExtraBold" family="Poppins" pointSize="16"/>
+                                <color key="textColor" red="0.91854703426361084" green="0.73969578742980957" blue="0.25081154704093933" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="HRH-K0-VY6"/>
+                    </view>
+                    <connections>
+                        <outlet property="SignEmail" destination="4hD-ex-Yeb" id="EHH-OS-8Pz"/>
+                        <outlet property="SignPassword" destination="5bh-ch-bVi" id="kWu-eP-h8Q"/>
+                        <outlet property="delivSwitch" destination="PjN-6F-qcA" id="nVd-sF-z4j"/>
+                        <outlet property="googleSignUpButt" destination="Rym-TO-h2n" id="H5p-r1-CGW"/>
+                        <outlet property="signUpButton" destination="46f-EP-M8k" id="aks-ZK-niS"/>
+                        <segue destination="DsY-8s-ABf" kind="show" identifier="signToRoot" id="ZqP-wr-B8j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lUe-HX-X3q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2053.5999999999999" y="-616.25615763546796"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="wIm-AR-FcV">
+            <objects>
+                <viewController id="DsY-8s-ABf" customClass="rootViewController" customModule="Boiler_Bag" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ujw-5r-g2N">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="iconApp" translatesAutoresizingMaskIntoConstraints="NO" id="qpm-wX-dKe">
+                                <rect key="frame" x="-9" y="296" width="375" height="220"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qpm-wX-dKe" firstAttribute="leading" secondItem="Ork-xv-fJ6" secondAttribute="leading" constant="-9" id="234-Kl-esj"/>
+                            <constraint firstItem="qpm-wX-dKe" firstAttribute="top" secondItem="Ork-xv-fJ6" secondAttribute="top" constant="294" id="EeC-bq-bQB"/>
+                            <constraint firstItem="qpm-wX-dKe" firstAttribute="centerY" secondItem="Ujw-5r-g2N" secondAttribute="centerY" id="cTi-7N-1OW"/>
+                            <constraint firstItem="qpm-wX-dKe" firstAttribute="centerX" secondItem="Ujw-5r-g2N" secondAttribute="centerX" id="gvp-Oe-lJY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ork-xv-fJ6"/>
+                    </view>
+                    <connections>
+                        <segue destination="kpn-Od-JiT" kind="show" identifier="signSegue" id="iOx-5a-Yhp"/>
+                        <segue destination="zSb-Fj-Ibe" kind="show" identifier="rootToStore" id="oqB-IW-P1J"/>
+                        <segue destination="O3c-MR-aF9" kind="show" identifier="rootToDeliv" id="8qE-Gt-yxI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cqg-g6-Qc8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="210.40000000000001" y="-616.25615763546796"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4an-Ou-gpN">
+            <objects>
+                <viewController id="O3c-MR-aF9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Th1-KL-BzR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Delivery User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jtq-ci-cIX">
+                                <rect key="frame" x="90" y="336" width="194" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Tcy-3f-4cE"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VBl-DS-jXL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-143.19999999999999" y="113.79310344827587"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="U2G-fh-N8c">
             <objects>
@@ -184,10 +389,18 @@ Kunwar.</string>
         <image name="Icon-Settings" width="240" height="240"/>
         <image name="earHart" width="1866" height="1308"/>
         <image name="ford" width="1866" height="1308"/>
+        <image name="iconApp" width="4608" height="4608"/>
+        <image name="logInFInal" width="4582" height="9744"/>
+        <image name="signup1" width="4020" height="8704"/>
         <image name="starbucks" width="1866" height="1308"/>
         <image name="stewart" width="1866" height="1308"/>
         <image name="thirdStreet" width="1866" height="1308"/>
         <image name="urbanMarket" width="1866" height="1308"/>
+        <image name="white" width="960" height="960"/>
         <image name="windsor" width="1866" height="1308"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="KMU-An-4ak"/>
+        <segue reference="iOx-5a-Yhp"/>
+    </inferredMetricsTieBreakers>
 </document>
