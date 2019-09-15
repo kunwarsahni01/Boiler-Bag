@@ -401,7 +401,7 @@ Kunwar.</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dAf-Aw-1sF">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dAf-Aw-1sF">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -482,9 +482,9 @@ Kunwar.</string>
         <image name="windsor-2" width="1866" height="1308"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="tXI-7q-f4N"/>
+        <segue reference="LhG-QU-x4Q"/>
         <segue reference="K85-QY-oA7"/>
-        <segue reference="KMU-An-4ak"/>
+        <segue reference="ZqP-wr-B8j"/>
         <segue reference="fpi-V8-kDd"/>
     </inferredMetricsTieBreakers>
 </document>
