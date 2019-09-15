@@ -81,11 +81,12 @@
                         <outlet property="googleLogInButton" destination="46w-YY-mYn" id="lK5-FH-30i"/>
                         <outlet property="logInButton" destination="Nxq-90-7YU" id="5i6-HD-nfi"/>
                         <outlet property="passwordLogIn" destination="ghT-O1-nO6" id="zZc-rw-Yyu"/>
+                        <segue destination="DsY-8s-ABf" kind="show" identifier="loginToRoot" id="1kD-tr-Eyp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jlt-yq-Km0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5021.6000000000004" y="-627.33990147783254"/>
+            <point key="canvasLocation" x="5084" y="-1003"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="BmQ-Pv-ryk">
@@ -160,11 +161,12 @@
                         <outlet property="delivSwitch" destination="PjN-6F-qcA" id="nVd-sF-z4j"/>
                         <outlet property="googleSignUpButt" destination="Rym-TO-h2n" id="H5p-r1-CGW"/>
                         <outlet property="signUpButton" destination="46f-EP-M8k" id="aks-ZK-niS"/>
+                        <segue destination="DsY-8s-ABf" kind="show" identifier="signToRoot" id="GKm-me-JPt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lUe-HX-X3q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4004" y="-1002.7093596059113"/>
+            <point key="canvasLocation" x="3804" y="-1068"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="wIm-AR-FcV">
@@ -385,6 +387,9 @@ Kunwar.</string>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wSp-j2-dr7">
                                                 <rect key="frame" x="316" y="21" width="27" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <segue destination="NgE-WJ-b86" kind="show" id="sSL-hg-Gt5"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vbl-Ji-LsE">
                                                 <rect key="frame" x="32" y="157" width="311" height="218"/>
@@ -633,29 +638,54 @@ Kunwar.</string>
             </objects>
             <point key="canvasLocation" x="5336.8000000000002" y="36.945812807881772"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="X0e-yD-fHm">
             <objects>
-                <viewController id="NgE-WJ-b86" sceneMemberID="viewController">
+                <viewController id="NgE-WJ-b86" customClass="SettingsViewController" customModule="Boiler_Bag" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DNz-ja-Vg3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8G-oG-WG6" userLabel="titleLabel">
-                                <rect key="frame" x="32" y="65" width="295" height="57"/>
+                                <rect key="frame" x="40" y="135" width="295" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="30"/>
                                 <color key="textColor" red="0.29803921570000003" green="0.29411764709999999" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Icon-Arrow-Left" translatesAutoresizingMaskIntoConstraints="NO" id="GN3-xT-DJZ">
+                                <rect key="frame" x="40" y="86" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WOt-av-1L8">
+                                <rect key="frame" x="36" y="256" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="20"/>
+                                <state key="normal" title="Log Out">
+                                    <color key="titleColor" red="0.91854703429999995" green="0.73969578739999997" blue="0.25081154700000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="logOutTouched:" destination="NgE-WJ-b86" eventType="touchUpInside" id="hJb-9i-5qG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F6D-jw-1xx">
+                                <rect key="frame" x="40" y="86" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="zSb-Fj-Ibe" kind="show" id="KvM-jO-nTu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="vQP-Uq-O78"/>
                     </view>
+                    <connections>
+                        <segue destination="DsY-8s-ABf" kind="show" identifier="settToHom" id="mRV-i3-2bM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8QR-bG-dUH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1385" y="671"/>
+            <point key="canvasLocation" x="1384.8" y="670.93596059113304"/>
         </scene>
     </scenes>
     <resources>
@@ -679,7 +709,8 @@ Kunwar.</string>
         <image name="windsor-2" width="1866" height="1308"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="tiM-93-i8b"/>
-        <segue reference="fpi-V8-kDd"/>
+        <segue reference="KvM-jO-nTu"/>
+        <segue reference="GKm-me-JPt"/>
+        <segue reference="iOx-5a-Yhp"/>
     </inferredMetricsTieBreakers>
 </document>
