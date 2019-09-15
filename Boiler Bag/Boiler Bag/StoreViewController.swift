@@ -14,6 +14,7 @@ class StoreViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.hidesBackButton = true
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

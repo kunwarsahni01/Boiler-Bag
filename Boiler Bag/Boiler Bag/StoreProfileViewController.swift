@@ -8,16 +8,34 @@
 
 import UIKit
 
-class StoreProfileViewController: UIViewController {
-    
+class StoreProfileViewController: UIViewController{
+
     @IBOutlet weak var storeImage: UIImageView!
     var storeNameDetail: String?
-    
+
     @IBOutlet weak var storeName: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        storeName.text = storeNameDetail!
-        storeImage.image = UIImage(named: storeNameDetail!)
+        //print(storeNameDetail)
     }
     
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        refreshView()
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
+    func refreshView(){
+    storeName.text = storeNameDetail!
+    storeImage.image = UIImage(named: storeNameDetail!)
+    }
+    
+    @IBAction func goBack(_ sender: Any) {
+        print("button pressed")
+        navigationController?.popViewController(animated: true)
+    }
 }
