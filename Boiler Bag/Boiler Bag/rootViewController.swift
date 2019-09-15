@@ -30,10 +30,10 @@ class rootViewController: UIViewController {
                 
                 if(delivery == "True"){
                     //print("True")
-                    self.performSegue(withIdentifier: "rootToStore", sender: nil)
+                    self.performSegue(withIdentifier: "rootToDeliv", sender: nil)
                 }else if (delivery == "False"){
                     //print("False")
-                    self.performSegue(withIdentifier: "rootToDeliv", sender: nil)
+                    self.performSegue(withIdentifier: "rootToStore", sender: nil)
                 } else {
                     print("error in devliery determination")
                 }

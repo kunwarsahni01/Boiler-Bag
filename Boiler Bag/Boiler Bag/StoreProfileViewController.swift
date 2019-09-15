@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  StoreProfileViewController.swift
 //  Boiler Bag
 //
 //  Created by Kunwar Sahni on 9/14/19.
@@ -8,13 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class StoreProfileViewController: UIViewController {
+    
+    var storeNameDetail: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        print(storeNameDetail)
     }
-
-
+    
 }
-

@@ -45,14 +45,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="13"/>
-                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" textContentType="email"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="**********" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ghT-O1-nO6">
                                 <rect key="frame" x="28" y="442" width="309" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nxq-90-7YU">
                                 <rect key="frame" x="32" y="534" width="305" height="54"/>
@@ -105,7 +105,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="13"/>
-                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" textContentType="email"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zFy-QA-6VA">
                                 <rect key="frame" x="34" y="165" width="286" height="41"/>
@@ -133,7 +133,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="13"/>
-                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="white" translatesAutoresizingMaskIntoConstraints="NO" id="xXQ-Kq-XS6">
                                 <rect key="frame" x="29" y="609" width="313" height="94"/>
@@ -176,16 +176,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="iconApp" translatesAutoresizingMaskIntoConstraints="NO" id="qpm-wX-dKe">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconApp" translatesAutoresizingMaskIntoConstraints="NO" id="qpm-wX-dKe">
                                 <rect key="frame" x="-9" y="296" width="375" height="220"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="qpm-wX-dKe" firstAttribute="leading" secondItem="Ork-xv-fJ6" secondAttribute="leading" constant="-9" id="234-Kl-esj"/>
-                            <constraint firstItem="qpm-wX-dKe" firstAttribute="top" secondItem="Ork-xv-fJ6" secondAttribute="top" constant="294" id="EeC-bq-bQB"/>
+                            <constraint firstItem="qpm-wX-dKe" firstAttribute="top" secondItem="Ork-xv-fJ6" secondAttribute="top" constant="252" id="EeC-bq-bQB"/>
                             <constraint firstItem="qpm-wX-dKe" firstAttribute="centerY" secondItem="Ujw-5r-g2N" secondAttribute="centerY" id="cTi-7N-1OW"/>
-                            <constraint firstItem="qpm-wX-dKe" firstAttribute="centerX" secondItem="Ujw-5r-g2N" secondAttribute="centerX" id="gvp-Oe-lJY"/>
+                            <constraint firstItem="qpm-wX-dKe" firstAttribute="centerX" secondItem="Ujw-5r-g2N" secondAttribute="centerX" constant="-9" id="gvp-Oe-lJY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ork-xv-fJ6"/>
                     </view>
@@ -223,16 +223,16 @@
             </objects>
             <point key="canvasLocation" x="-143.19999999999999" y="113.79310344827587"/>
         </scene>
-        <!--View Controller-->
+        <!--Store View Controller-->
         <scene sceneID="U2G-fh-N8c">
             <objects>
-                <viewController id="zSb-Fj-Ibe" customClass="ViewController" customModule="Boiler_Bag" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="zSb-Fj-Ibe" customClass="StoreViewController" customModule="Boiler_Bag" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bwz-3d-FmG">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aK2-Me-JTw">
-                                <rect key="frame" x="0.0" y="44" width="375" height="768"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="1956"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t4E-K4-gX0">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
@@ -288,8 +288,75 @@ Kunwar.</string>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wSp-j2-dr7">
                                                 <rect key="frame" x="316" y="21" width="27" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vbl-Ji-LsE">
+                                                <rect key="frame" x="32" y="157" width="311" height="218"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <connections>
-                                                    <segue destination="NgE-WJ-b86" kind="show" id="kuv-jh-UAB"/>
+                                                    <action selector="thirdStreet:" destination="zSb-Fj-Ibe" eventType="touchUpInside" id="9lG-2v-Ywv"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iNU-om-Ul2">
+                                                <rect key="frame" x="32" y="392" width="311" height="218"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <action selector="starbucks:" destination="zSb-Fj-Ibe" eventType="touchUpInside" id="kic-CQ-DaJ"/>
+                                                    <action selector="thirdStreet:" destination="zSb-Fj-Ibe" eventType="touchUpInside" id="hDv-2z-HDo"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Az-US-dhr">
+                                                <rect key="frame" x="32" y="631" width="311" height="218"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <action selector="starbucks:" destination="zSb-Fj-Ibe" eventType="touchUpInside" id="dN7-gW-uuM"/>
+                                                    <action selector="thirdStreet:" destination="zSb-Fj-Ibe" eventType="touchUpInside" id="bFq-pW-zY8"/>
+                                                    <action selector="urbanMarket:" destination="zSb-Fj-Ibe" eventType="touchUpInside" id="8F4-1J-V1u"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgP-QU-m2u">
+                                                <rect key="frame" x="32" y="874" width="311" height="218"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <action selector="starbucks:" destination="zSb-Fj-Ibe" eventType="touchUpInside" id="rIi-5T-we7"/>
+                                                    <action selector="stewart:" destination="zSb-Fj-Ibe" eventType="touchUpInside" id="CS4-PB-cOB"/>
+                                                    <action selector="thirdStreet:" destination="zSb-Fj-Ibe" eventType="touchUpInside" id="CsC-zO-s5f"/>
+                                                    <action selector="urbanMarket:" destination="zSb-Fj-Ibe" eventType="touchUpInside" id="puo-0M-EwV"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tqX-MF-uB9">
+                                                <rect key="frame" x="32" y="1113" width="311" height="218"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <action selector="earhart:" destination="zSb-Fj-Ibe" eventType="touchUpInside" id="ecM-NY-rES"/>
+                                                    <action selector="starbucks:" destination="zSb-Fj-Ibe" eventType="touchUpInside" id="st2-YZ-Byb"/>
+                                                    <action selector="stewart:" destination="zSb-Fj-Ibe" eventType="touchUpInside" id="I8U-B8-bKj"/>
+                                                    <action selector="thirdStreet:" destination="zSb-Fj-Ibe" eventType="touchUpInside" id="VMM-Bn-k2G"/>
+                                                    <action selector="urbanMarket:" destination="zSb-Fj-Ibe" eventType="touchUpInside" id="F1j-JE-E2b"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wEN-6R-hOP">
+                                                <rect key="frame" x="32" y="1352" width="311" height="218"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <action selector="earhart:" destination="zSb-Fj-Ibe" eventType="touchUpInside" id="nBV-kq-4JH"/>
+                                                    <action selector="ford:" destination="zSb-Fj-Ibe" eventType="touchUpInside" id="jy7-LC-syk"/>
+                                                    <action selector="starbucks:" destination="zSb-Fj-Ibe" eventType="touchUpInside" id="heD-g2-KrI"/>
+                                                    <action selector="stewart:" destination="zSb-Fj-Ibe" eventType="touchUpInside" id="cqf-06-7SR"/>
+                                                    <action selector="thirdStreet:" destination="zSb-Fj-Ibe" eventType="touchUpInside" id="IeT-6p-qbM"/>
+                                                    <action selector="urbanMarket:" destination="zSb-Fj-Ibe" eventType="touchUpInside" id="kUP-VX-JCN"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFc-dA-nI7">
+                                                <rect key="frame" x="32" y="1591" width="311" height="218"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <action selector="earhart:" destination="zSb-Fj-Ibe" eventType="touchUpInside" id="lAR-JE-V4V"/>
+                                                    <action selector="ford:" destination="zSb-Fj-Ibe" eventType="touchUpInside" id="YKJ-Qn-RDE"/>
+                                                    <action selector="starbucks:" destination="zSb-Fj-Ibe" eventType="touchUpInside" id="nkh-PA-jWV"/>
+                                                    <action selector="stewart:" destination="zSb-Fj-Ibe" eventType="touchUpInside" id="DCS-iV-CxJ"/>
+                                                    <action selector="thirdStreet:" destination="zSb-Fj-Ibe" eventType="touchUpInside" id="9mg-1k-daE"/>
+                                                    <action selector="urbanMarket:" destination="zSb-Fj-Ibe" eventType="touchUpInside" id="wUz-Nz-wfB"/>
+                                                    <action selector="windsor:" destination="zSb-Fj-Ibe" eventType="touchUpInside" id="YLv-XS-EFb"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -317,15 +384,19 @@ Kunwar.</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="68Z-Pw-FMl"/>
                     </view>
+                    <size key="freeformSize" width="375" height="2000"/>
+                    <connections>
+                        <segue destination="vmq-XC-gAE" kind="show" identifier="storeToProfile" customClass="SegueFromRight" customModule="Boiler_Bag" customModuleProvider="target" id="tXI-7q-f4N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f5U-qJ-ff8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1228" y="77.58620689655173"/>
         </scene>
-        <!--Store View Controller-->
+        <!--Store Profile View Controller-->
         <scene sceneID="SKk-bh-jW3">
             <objects>
-                <viewController id="vmq-XC-gAE" customClass="StoreViewController" customModule="Boiler_Bag" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vmq-XC-gAE" customClass="StoreProfileViewController" customModule="Boiler_Bag" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Shq-mQ-B6g">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -338,6 +409,10 @@ Kunwar.</string>
                                 <rect key="frame" x="0.0" y="332" width="375" height="480"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Icon-Left" translatesAutoresizingMaskIntoConstraints="NO" id="VN0-0g-bI8">
+                                <rect key="frame" x="32" y="72" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jOg-Wj-G2a">
                                 <rect key="frame" x="32" y="150" width="303" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -345,10 +420,13 @@ Kunwar.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Icon-Left" translatesAutoresizingMaskIntoConstraints="NO" id="VN0-0g-bI8">
-                                <rect key="frame" x="32" y="72" width="20" height="20"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mcc-Nb-H8F">
+                                <rect key="frame" x="32" y="72" width="26" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <connections>
+                                    <segue destination="zSb-Fj-Ibe" kind="show" customClass="SegueFromLeft" customModule="Boiler_Bag" customModuleProvider="target" id="K85-QY-oA7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="k2o-UM-Hb9"/>
@@ -356,7 +434,7 @@ Kunwar.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wyG-KK-qMD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1228" y="769.21182266009851"/>
+            <point key="canvasLocation" x="2428" y="799.50738916256159"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="X0e-yD-fHm">
@@ -400,7 +478,8 @@ Kunwar.</string>
         <image name="windsor" width="1866" height="1308"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="K85-QY-oA7"/>
         <segue reference="KMU-An-4ak"/>
-        <segue reference="iOx-5a-Yhp"/>
+        <segue reference="fpi-V8-kDd"/>
     </inferredMetricsTieBreakers>
 </document>
