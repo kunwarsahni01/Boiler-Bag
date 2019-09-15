@@ -15,6 +15,7 @@ class StoreProfileViewController: UIViewController, UITableViewDelegate, UITable
     
     @IBOutlet weak var storeImage: UIImageView!
     var storeNameDetail: String?
+    var orderNumber:Int?
     var refStores: DatabaseReference!
     @IBOutlet weak var storeName: UILabel!
      var refStores2: DatabaseReference!
@@ -43,31 +44,15 @@ class StoreProfileViewController: UIViewController, UITableViewDelegate, UITable
         return 168.0;
     }
     
-    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath)
-        if let cell = tableView.cellForRow(at: indexPath) as? ViewControllerTableViewCell {
-            //print(cell.lblName)
-            if(cell.checkMark.isHidden){
-                cell.checkMark.isHidden = false
-            }else {
-                cell.checkMark.isHidden = true
-            }
-            
-            guard let uid = Auth.auth().currentUser?.uid else {return}
-            let values = ["Store": storeNameDetail,"Item": cell.lblName.text, "Price": cell.lblPrice.text]
-            Database.database().reference().child("orders").child("\(indexPath[1])").updateChildValues(values, withCompletionBlock: { (error, ref) in
-                if let error = error {
-                    print("Failed to update databse with errors:", error.localizedDescription)
-                    return
-                }
-                print("Succesfuly sent order")
-            })
-            
-        }
-}
-
+   
     override func viewDidLoad() {
         super.viewDidLoad()
+        Database.database().reference().child("random").child("random").observeSingleEvent(of: .value) { (snapshot) in
+            guard let random = snapshot.value as? Int else {return}
+            self.orderNumber = random + 1
+            let values = ["random": self.orderNumber]
+            Database.database().reference().child("random").updateChildValues(values)
+        }
         
         let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(sender:)))
         view.addGestureRecognizer(rightSwipe)
@@ -112,6 +97,25 @@ class StoreProfileViewController: UIViewController, UITableViewDelegate, UITable
     }
 
     
+    
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let cell = tableView.cellForRow(at: indexPath) as? ViewControllerTableViewCell {
+            if(cell.checkMark.isHidden){
+                cell.checkMark.isHidden = false
+                
+                let values = ["Store": storeNameDetail,"Item": cell.lblName.text, "Price": cell.lblPrice.text]
+                 Database.database().reference().child("orders").child("\(orderNumber!)").child("\(indexPath[1])").updateChildValues(values)
+            }else {
+                cell.checkMark.isHidden = true
+                    Database.database().reference().child("orders").child("\(orderNumber!)").child("\(indexPath[1])").removeValue()
+                
+            }
+            
+            
+            
+        }
+    }
+
     
     @objc func handleSwipe(sender: UISwipeGestureRecognizer) {
         if sender.state == .ended {
