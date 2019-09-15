@@ -9,25 +9,45 @@
 import UIKit
 import Firebase
 
-class DeliveryViewController: UIViewController {
+class DeliveryViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
+    
+
+    
     @IBOutlet weak var delivTableVIew: UITableView!
-    var orderNumber: Int?
-    var tblArray: [String] = []
+    
+    var orderNum: String?
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "storeToProfile"){
+            let displayVC = segue.destination as! orderDetialViewController
+            displayVC.orderNumber = orderNum
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        Database.database().reference().child("random").child("random").observeSingleEvent(of: .value) { (snapshot) in
-            guard let random = snapshot.value as? Int else {return}
-            self.orderNumber = random + 1
-        }
-        
-        Database.database().reference().child("random").child("random").child("\(orderNumber!)").observeSingleEvent(of: .value, with: { (snapshot) in
-            if snapshot.exists(){
-                self.tblArray.append("\(self.orderNumber)")
-            }else{
-                print("doesnt exist yet")
-            }
-        })
-        print(tblArray)
+    }
+    
+    
+    let tblArray = ["2385", "2386", "2387", "2389", "2390", "2391", "2392"]
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return(tblArray.count)
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "cell")
+        cell.textLabel?.text  = tblArray[indexPath.row]
+        cell.textLabel?.font = UIFont(name: "Poppins-Light", size: 35)
+        return cell
+    }
+    
+    public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80.0
+    }
+    
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        orderNum = "\(tblArray[indexPath.row])"
+        self.performSegue(withIdentifier: "delivToDetial", sender: self)
     }
 }

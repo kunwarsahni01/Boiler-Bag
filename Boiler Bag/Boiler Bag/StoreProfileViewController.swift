@@ -46,7 +46,7 @@ class StoreProfileViewController: UIViewController, UITableViewDelegate, UITable
     
     
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 168.0;
+        return 168.0
     }
     
    
