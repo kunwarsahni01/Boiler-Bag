@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import SDWebImage
 
 class StoreProfileViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     @IBOutlet weak var tblStore: UITableView!
@@ -24,16 +25,43 @@ class StoreProfileViewController: UIViewController, UITableViewDelegate, UITable
         let store: storeModel
         store = storeList[indexPath.row]
         cell.lblName.text = store.name
-        cell.lblPrice.text = "\(store.price!)"
+        cell.lblPrice.text = "$\(store.price!)"
+        cell.productImage.sd_setImage(with: URL(string: store.picture!), placeholderImage: UIImage(named: "ford"))
+        cell.productImage.layer.cornerRadius = 20.0
+        cell.productImage.clipsToBounds = true
+        
         return cell
     }
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return storeList.count
     }
+    
+    
+    public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 168.0;
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        refStores = Database.database().reference().child("18sLfEv4TJHGvcaPUl8LLfeIE_R-_dTCwCszPHX7OrYo").child("Markets")
+        var childType: String
+        if(storeNameDetail! == "Third Street Market" ){
+            childType = "Markets"
+        }else if(storeNameDetail == "Urban Market"){
+            childType = "Markets"
+        }else if (storeNameDetail == "Stewart Market"){
+            childType = "Markets"
+        }else if(storeNameDetail == "Starbucks"){
+            childType = "Starbucks"
+        }else if(storeNameDetail == "Earhart"){
+            childType = "Earhart OTG"
+        }else if(storeNameDetail == "Ford"){
+            childType = "Ford on the go"
+        }else if(storeNameDetail == "Windsor"){
+            childType = "Windsor ON THE GO"
+        }else{
+            childType = "Markets"
+        }
+        refStores = Database.database().reference().child("18sLfEv4TJHGvcaPUl8LLfeIE_R-_dTCwCszPHX7OrYo").child(childType)
         refStores.observe(DataEventType.value, with:{ (snapshot) in
             if snapshot.childrenCount>0{
                 self.storeList.removeAll()
