@@ -449,6 +449,7 @@ Kunwar.</string>
                     <connections>
                         <outlet property="storeImage" destination="dAf-Aw-1sF" id="Ssx-3P-loW"/>
                         <outlet property="storeName" destination="jOg-Wj-G2a" id="yIQ-sr-26k"/>
+                        <outlet property="tblStore" destination="5S3-Pu-4Zc" id="TRa-FN-82y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wyG-KK-qMD" userLabel="First Responder" sceneMemberID="firstResponder"/>
