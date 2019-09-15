@@ -14,15 +14,18 @@ class ViewControllerTableViewCell: UITableViewCell {
     @IBOutlet weak var lblPrice: UILabel!
     @IBOutlet weak var productImage: UIImageView!
     @IBOutlet weak var checkMark: UIImageView!
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         checkMark.isHidden = true
         // Initialization code
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
-
+    
+    override func prepareForReuse() {
+        checkMark.isHidden = true
+    }
 }

@@ -13,6 +13,8 @@ import SDWebImage
 class StoreProfileViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     @IBOutlet weak var tblStore: UITableView!
     
+    @IBOutlet weak var submitButtonTap: UIButton!
+    @IBOutlet weak var submitButton: UIImageView!
     @IBOutlet weak var storeImage: UIImageView!
     var storeNameDetail: String?
     var orderNumber:Int?
@@ -21,8 +23,10 @@ class StoreProfileViewController: UIViewController, UITableViewDelegate, UITable
      var refStores2: DatabaseReference!
     
     var storeList = [storeModel]()
+    var selectedItems = [Bool]()
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ViewControllerTableViewCell
         let store: storeModel
         store = storeList[indexPath.row]
@@ -31,6 +35,7 @@ class StoreProfileViewController: UIViewController, UITableViewDelegate, UITable
         cell.productImage.sd_setImage(with: URL(string: store.picture!), placeholderImage: UIImage(named: "ford"))
         cell.productImage.layer.cornerRadius = 20.0
         cell.productImage.clipsToBounds = true
+        cell.checkMark.isHidden = !selectedItems[indexPath.row]
         
         return cell
     }
@@ -47,6 +52,8 @@ class StoreProfileViewController: UIViewController, UITableViewDelegate, UITable
    
     override func viewDidLoad() {
         super.viewDidLoad()
+        submitButton.isHidden = true
+        submitButtonTap.isHidden = true
         Database.database().reference().child("random").child("random").observeSingleEvent(of: .value) { (snapshot) in
             guard let random = snapshot.value as? Int else {return}
             self.orderNumber = random + 1
@@ -90,29 +97,31 @@ class StoreProfileViewController: UIViewController, UITableViewDelegate, UITable
                     let store = storeModel(category: storesCategory as! String?, id: storesId as! Int?, name: storesName as! String?, picture: storesPicture as! String?, price: storesPrice as! Double?)
                     
                     self.storeList.append(store)
+                    self.selectedItems.append(false)
                 }
                 self.tblStore.reloadData()
             }
         })
     }
 
-    
+ 
     
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        submitButton.isHidden = false
+        submitButtonTap.isHidden = false
         if let cell = tableView.cellForRow(at: indexPath) as? ViewControllerTableViewCell {
-            if(cell.checkMark.isHidden){
-                cell.checkMark.isHidden = false
+            if(selectedItems[indexPath.row]==false){
+                selectedItems[indexPath.row] = true
                 
                 let values = ["Store": storeNameDetail,"Item": cell.lblName.text, "Price": cell.lblPrice.text]
                  Database.database().reference().child("orders").child("\(orderNumber!)").child("\(indexPath[1])").updateChildValues(values)
+                self.tblStore.reloadData()
             }else {
-                cell.checkMark.isHidden = true
-                    Database.database().reference().child("orders").child("\(orderNumber!)").child("\(indexPath[1])").removeValue()
+                selectedItems[indexPath.row] = false
+                Database.database().reference().child("orders").child("\(orderNumber!)").child("\(indexPath[1])").removeValue()
+                self.tblStore.reloadData()
                 
             }
-            
-            
-            
         }
     }
 
