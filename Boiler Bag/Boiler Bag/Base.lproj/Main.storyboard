@@ -130,10 +130,6 @@
                                 <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
                             </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="white" translatesAutoresizingMaskIntoConstraints="NO" id="xXQ-Kq-XS6">
-                                <rect key="frame" x="29" y="609" width="313" height="94"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="PjN-6F-qcA">
                                 <rect key="frame" x="29" y="272" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -148,6 +144,10 @@
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="signup1" translatesAutoresizingMaskIntoConstraints="NO" id="Ufk-AZ-7Bs">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="white" translatesAutoresizingMaskIntoConstraints="NO" id="xXQ-Kq-XS6">
+                                <rect key="frame" x="29" y="609" width="313" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -233,8 +233,8 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aK2-Me-JTw">
                                 <rect key="frame" x="0.0" y="44" width="375" height="1956"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t4E-K4-gX0">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t4E-K4-gX0">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1900"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7g-bf-HEY" userLabel="titleLabel">
                                                 <rect key="frame" x="32" y="11" width="295" height="88"/>
@@ -404,7 +404,7 @@ Kunwar.</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="goBack:" destination="vmq-XC-gAE" eventType="touchUpInside" id="Z30-pC-A82"/>
-                                    <segue destination="zSb-Fj-Ibe" kind="show" customClass="SegueFromLeft" customModule="Boiler_Bag" customModuleProvider="target" id="kDg-IW-6Ki"/>
+                                    <segue destination="zSb-Fj-Ibe" kind="show" identifier="detailToList" customClass="SegueFromLeft" customModule="Boiler_Bag" customModuleProvider="target" id="kDg-IW-6Ki"/>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="168" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5S3-Pu-4Zc">
@@ -412,7 +412,7 @@ Kunwar.</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="dPW-I8-Krt" customClass="ViewControllerTableViewCell" customModule="Boiler_Bag" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="dPW-I8-Krt" customClass="ViewControllerTableViewCell" customModule="Boiler_Bag" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="168"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dPW-I8-Krt" id="EbH-Ew-a0u">
@@ -420,7 +420,7 @@ Kunwar.</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p8e-aJ-cYm">
-                                                    <rect key="frame" x="149" y="21" width="186" height="49"/>
+                                                    <rect key="frame" x="149" y="21" width="186" height="62.666666666666664"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="17"/>
                                                     <color key="textColor" red="0.91854703429999995" green="0.73969578739999997" blue="0.25081154700000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -431,15 +431,20 @@ Kunwar.</string>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9rV-hY-S8X">
-                                                    <rect key="frame" x="149" y="78" width="186" height="46"/>
+                                                    <rect key="frame" x="149" y="83" width="186" height="62.666666666666664"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="17"/>
                                                     <color key="textColor" red="0.91854703429999995" green="0.73969578739999997" blue="0.25081154700000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="checkMark" translatesAutoresizingMaskIntoConstraints="NO" id="yCR-g5-6cl">
+                                                    <rect key="frame" x="324" y="65" width="36" height="36"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="checkMark" destination="yCR-g5-6cl" id="grf-AX-OmS"/>
                                             <outlet property="lblName" destination="p8e-aJ-cYm" id="3T0-Ps-gFn"/>
                                             <outlet property="lblPrice" destination="9rV-hY-S8X" id="Q0l-ZC-YOz"/>
                                             <outlet property="productImage" destination="VZY-7z-AKb" id="gca-1N-Myp"/>
@@ -494,6 +499,7 @@ Kunwar.</string>
         <image name="Feed-Background" width="2250" height="2880"/>
         <image name="Icon-Left" width="270" height="210"/>
         <image name="Icon-Settings" width="240" height="240"/>
+        <image name="checkMark" width="1536" height="1536"/>
         <image name="earHart-" width="1866" height="1308"/>
         <image name="ford-1" width="1866" height="1308"/>
         <image name="iconApp" width="4608" height="4608"/>
@@ -508,6 +514,6 @@ Kunwar.</string>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="kDg-IW-6Ki"/>
-        <segue reference="iOx-5a-Yhp"/>
+        <segue reference="fpi-V8-kDd"/>
     </inferredMetricsTieBreakers>
 </document>

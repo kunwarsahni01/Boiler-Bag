@@ -13,9 +13,11 @@ class ViewControllerTableViewCell: UITableViewCell {
     @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var lblPrice: UILabel!
     @IBOutlet weak var productImage: UIImageView!
+    @IBOutlet weak var checkMark: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        checkMark.isHidden = true
         // Initialization code
     }
 
