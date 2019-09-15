@@ -10,11 +10,14 @@ import UIKit
 
 class StoreProfileViewController: UIViewController {
     
+    @IBOutlet weak var storeImage: UIImageView!
     var storeNameDetail: String?
     
+    @IBOutlet weak var storeName: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(storeNameDetail)
+        storeName.text = storeNameDetail!
+        storeImage.image = UIImage(named: storeNameDetail!)
     }
     
 }

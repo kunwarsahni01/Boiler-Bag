@@ -29,27 +29,35 @@ class StoreViewController: UIViewController {
     }
     
     @IBAction func starbucks(_ sender: Any) {
+        storeName = "Starbucks"
+        self.performSegue(withIdentifier: "storeToProfile", sender: self)
         
     }
     
     @IBAction func urbanMarket(_ sender: Any) {
+        storeName = "Urban Market"
+        self.performSegue(withIdentifier: "storeToProfile", sender: self)
         
     }
     
     @IBAction func stewart(_ sender: Any) {
-        
+        storeName = "Stewart Market"
+        self.performSegue(withIdentifier: "storeToProfile", sender: self)
         
     }
     
     @IBAction func earhart(_ sender: Any) {
-        
+        storeName = "Earhart"
+        self.performSegue(withIdentifier: "storeToProfile", sender: self)
     }
     
     @IBAction func ford(_ sender: Any) {
-        
+        storeName = "Ford"
+        self.performSegue(withIdentifier: "storeToProfile", sender: self)
     }
     
     @IBAction func windsor(_ sender: Any) {
-        
+        storeName = "Windsor"
+        self.performSegue(withIdentifier: "storeToProfile", sender: self)
     }
 }
