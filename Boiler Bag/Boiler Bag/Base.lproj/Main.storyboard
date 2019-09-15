@@ -441,6 +441,10 @@ Kunwar.</string>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="vmq-XC-gAE" id="4N5-nv-Lls"/>
+                                    <outlet property="delegate" destination="vmq-XC-gAE" id="ptK-9Z-kCx"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

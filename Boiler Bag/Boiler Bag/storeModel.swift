@@ -11,12 +11,12 @@ import UIKit
 
 class storeModel{
     var category: String?
-    var id: String?
+    var id: Int?
     var name: String?
     var picture: String?
-    var price: String?
+    var price: Double?
     
-    init(category: String?, id: String?, name: String?, picture: String?, price: String?){
+    init(category: String?, id: Int?, name: String?, picture: String?, price: Double?){
         self.id = id
         self.name = name
         self.picture = picture
