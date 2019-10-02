@@ -12,7 +12,6 @@ import SDWebImage
 
 class StoreProfileViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     @IBOutlet weak var tblStore: UITableView!
-    
     @IBOutlet weak var submitButtonTap: UIButton!
     @IBOutlet weak var submitButton: UIImageView!
     @IBOutlet weak var storeImage: UIImageView!
@@ -21,12 +20,12 @@ class StoreProfileViewController: UIViewController, UITableViewDelegate, UITable
     var refStores: DatabaseReference!
     @IBOutlet weak var storeName: UILabel!
      var refStores2: DatabaseReference!
-    
+
     var storeList = [storeModel]()
     var selectedItems = [Bool]()
-    
+
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
+
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ViewControllerTableViewCell
         let store: storeModel
         store = storeList[indexPath.row]
@@ -36,20 +35,20 @@ class StoreProfileViewController: UIViewController, UITableViewDelegate, UITable
         cell.productImage.layer.cornerRadius = 20.0
         cell.productImage.clipsToBounds = true
         cell.checkMark.isHidden = !selectedItems[indexPath.row]
-        
+
         return cell
     }
-    
+
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return storeList.count
     }
-    
-    
+
+
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 168.0
     }
-    
-   
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
         submitButton.isHidden = true
@@ -60,10 +59,10 @@ class StoreProfileViewController: UIViewController, UITableViewDelegate, UITable
             let values = ["random": self.orderNumber]
             Database.database().reference().child("random").updateChildValues(values)
         }
-        
+
         let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(sender:)))
         view.addGestureRecognizer(rightSwipe)
-        
+
         var childType: String
         if(storeNameDetail! == "Third Street Market" ){
             childType = "Markets"
@@ -93,9 +92,9 @@ class StoreProfileViewController: UIViewController, UITableViewDelegate, UITable
                     let storesName = storesObject?["Name"]
                     let storesPrice = storesObject?["Price"]
                     let storesPicture = storesObject?["picture"]
-                    
+
                     let store = storeModel(category: storesCategory as! String?, id: storesId as! Int?, name: storesName as! String?, picture: storesPicture as! String?, price: storesPrice as! Double?)
-                    
+
                     self.storeList.append(store)
                     self.selectedItems.append(false)
                 }
@@ -104,15 +103,15 @@ class StoreProfileViewController: UIViewController, UITableViewDelegate, UITable
         })
     }
 
- 
-    
+
+
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         submitButton.isHidden = false
         submitButtonTap.isHidden = false
         if let cell = tableView.cellForRow(at: indexPath) as? ViewControllerTableViewCell {
             if(selectedItems[indexPath.row]==false){
                 selectedItems[indexPath.row] = true
-                
+
                 let values = ["Store": storeNameDetail,"Item": cell.lblName.text, "Price": cell.lblPrice.text]
                  Database.database().reference().child("orders").child("\(orderNumber!)").child("\(indexPath[1])").updateChildValues(values)
                 self.tblStore.reloadData()
@@ -120,12 +119,12 @@ class StoreProfileViewController: UIViewController, UITableViewDelegate, UITable
                 selectedItems[indexPath.row] = false
                 Database.database().reference().child("orders").child("\(orderNumber!)").child("\(indexPath[1])").removeValue()
                 self.tblStore.reloadData()
-                
+
             }
         }
     }
 
-    
+
     @objc func handleSwipe(sender: UISwipeGestureRecognizer) {
         if sender.state == .ended {
             switch sender.direction {
@@ -136,20 +135,20 @@ class StoreProfileViewController: UIViewController, UITableViewDelegate, UITable
             }
         }
     }
-    
+
     override func viewDidAppear(_ animated: Bool) {
         refreshView()
     }
-    
+
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
-    
+
     func refreshView(){
     storeName.text = storeNameDetail!
     storeImage.image = UIImage(named: storeNameDetail!)
     }
-    
+
     @IBAction func goBack(_ sender: Any) {
         print("button pressed")
         navigationController?.popViewController(animated: true)
