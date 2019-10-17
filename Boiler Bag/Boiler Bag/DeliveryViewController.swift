@@ -28,6 +28,8 @@ class DeliveryViewController: UIViewController, UITableViewDataSource, UITableVi
         super.viewDidLoad()
     }
     
+    // herro ios
+    
     
     let tblArray = ["2385", "2386", "2387", "2389", "2390", "2391", "2392"]
     
